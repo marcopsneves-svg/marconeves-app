@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Marco Neves",
+    "slug": "marconeves-realestate",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "marconeves",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": false,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.marconeves.consultor.imobiliario",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Permitir acesso às fotos para enviar imagens de imóveis",
+        "NSCameraUsageDescription": "Permitir acesso à câmera para fotografar imóveis",
+        "CFBundleDisplayName": "Marco Neves"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#0A1628"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.marconeves.consultor.imobiliario"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#0A1628"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

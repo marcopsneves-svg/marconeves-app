@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+
+# Native builds
+ios/
+android/
+
+# Environment variables
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+*.log
+
+# Metro
+.metro-health-check*
+.metro-cache/
+
+# Testing
+coverage/
+
+# Yarn
+yarn-error.log
