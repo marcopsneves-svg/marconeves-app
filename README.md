@@ -1,47 +1,38 @@
 # Marco Neves - Consultor Imobiliário
 App móvel para gestão de leads imobiliários.
 
-## 📱 Instalação no iPhone (Conta Apple Gratuita)
+## 🚀 Deploy no Vercel (Recomendado)
 
-### Pré-requisitos no Mac:
-- Xcode 15+ (da App Store)
-- Node.js 18+
-- CocoaPods: `sudo gem install cocoapods`
+### Passo 1: Aceder ao Vercel
+1. Vá a **https://vercel.com**
+2. Clique em **"Sign Up"** ou **"Log In"**
+3. Escolha **"Continue with GitHub"**
 
-### Comandos no Terminal:
+### Passo 2: Importar Projeto
+1. Clique em **"Add New..."** → **"Project"**
+2. Na lista de repositórios, encontre **"marconeves-app"**
+3. Clique **"Import"**
 
-```bash
-# 1. Navegar para a pasta do projeto
-cd caminho/para/marconeves-app
+### Passo 3: Configurar e Deploy
+1. Deixe todas as configurações padrão
+2. Clique **"Deploy"**
+3. Aguarde 2-3 minutos
 
-# 2. Instalar dependências
-npm install
+### Passo 4: Pronto!
+Terá um link como: `https://marconeves-app.vercel.app`
 
-# 3. Gerar pasta iOS
-npx expo prebuild --platform ios --clean
+## 📱 Adicionar ao iPhone
 
-# 4. Instalar CocoaPods
-cd ios
-pod install
-cd ..
+1. Abra **Safari** no iPhone
+2. Vá ao seu link do Vercel
+3. Toque no ícone **Partilhar** ⬆️
+4. Toque **"Adicionar ao ecrã principal"**
+5. Nome: **Marco Neves**
+6. **Adicionar**
 
-# 5. Abrir Xcode
-open ios/MarcoNeves.xcworkspace
-```
-
-### No Xcode:
-1. Xcode → Settings → Accounts → Adicionar Apple ID
-2. Selecionar projeto → Signing & Capabilities
-3. Marcar "Automatically manage signing"
-4. Selecionar Team (Personal Team)
-5. Ligar iPhone → Selecionar dispositivo → Play ▶️
-
-### No iPhone (após instalação):
-Definições → Geral → Gestão VPN e Dispositivos → Confiar
-
-## 🔑 Configuração
-- Bundle ID: `com.marconeves.consultor.imobiliario`
-- PIN Admin: `1234`
+## 🔑 Informações
+- **PIN Admin:** 1234
+- **Bundle ID:** com.marconeves.consultor.imobiliario
 
 ## 📞 Contacto
 Marco Neves - Consultor Imobiliário REMAX

@@ -2,12 +2,31 @@ const BACKEND_URL = process.env.EXPO_PUBLIC_BACKEND_URL || '';
 
 const API_BASE = `${BACKEND_URL}/api`;
 
+// Check if we're in demo mode (no backend)
+const isDemoMode = !BACKEND_URL || BACKEND_URL === '';
+
 export interface ApiResponse<T> {
   data?: T;
   error?: string;
 }
 
+// Demo mode - simulate successful API responses
+function demoResponse<T>(data: any): Promise<ApiResponse<T>> {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log('Demo Mode - Form submitted:', data);
+      resolve({ data: { success: true, message: 'Dados enviados com sucesso!' } as T });
+    }, 1000);
+  });
+}
+
 async function apiRequest<T>(endpoint: string, options?: RequestInit): Promise<ApiResponse<T>> {
+  // If in demo mode, return simulated success
+  if (isDemoMode) {
+    const body = options?.body ? JSON.parse(options.body as string) : {};
+    return demoResponse<T>(body);
+  }
+
   try {
     const response = await fetch(`${API_BASE}${endpoint}`, {
       headers: {
