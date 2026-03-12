@@ -228,7 +228,7 @@ export default {
   createMarketStudy,
   createFinancial,
   getAllLeads,
-};
+}; 
 
 
 
